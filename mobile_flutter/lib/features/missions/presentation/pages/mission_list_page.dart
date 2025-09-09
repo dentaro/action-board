@@ -26,7 +26,7 @@ class MissionListPage extends ConsumerWidget {
             flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
               title: Text(
-                '🎯ミッション一覧',
+                '✨ミッション一覧',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                   color: AppColors.textPrimary,
                   fontWeight: FontWeight.w700,
@@ -80,16 +80,16 @@ class MissionListPage extends ConsumerWidget {
       String category;
       switch (mission.difficulty) {
         case 1:
-          category = '🎯 まずはここから！';
+          category = '✨ まずはここから！';
           break;
         case 2:
-          category = '🎯 ポスティング系ミッション';
+          category = '✨ 編集プロジェクト';
           break;
         case 3:
-          category = '🎯 高ポイントが獲得できる';
+          category = '✨ デザインプロジェクト';
           break;
         default:
-          category = '🎯 その他のミッション';
+          category = '✨ その他のミッション';
       }
 
       grouped.putIfAbsent(category, () => []).add(mission);

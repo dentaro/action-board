@@ -279,7 +279,7 @@ class _MissionDetailPageState extends ConsumerState<MissionDetailPage> {
                               ),
                               const SizedBox(height: 16),
                               Text(
-                                '※入力した内容は、外部に公開されることはありません。',
+                                '※入力した内容は、外部公開されます。',
                                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                       color: Colors.black,
                                     ),

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mobile_flutter/features/home/presentation/widgets/mission_sections.dart';
 import 'package:mobile_flutter/features/home/presentation/widgets/team_stats_section.dart';
 import 'package:mobile_flutter/features/home/presentation/widgets/view_all_missions_button.dart';
+import 'package:mobile_flutter/features/home/presentation/widgets/view_map_posting_button.dart';
 import 'package:mobile_flutter/shared/widgets/custom_app_bar.dart';
 
 class HomePage extends ConsumerStatefulWidget {
@@ -33,12 +34,14 @@ class _HomePageState extends ConsumerState<HomePage> {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                // チームみらいの活動状況
-                TeamStatsSection(),
+                // 情報文化デザインの活動状況
+                // TeamStatsSection(),
+                ViewMapPostingButton(),
                 // ミッションセクション
                 MissionSections(),
                 // ミッション一覧へボタン
                 ViewAllMissionsButton(),
+                
               ],
             ),
           ),

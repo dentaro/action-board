@@ -20,17 +20,17 @@ class MissionSections extends ConsumerWidget {
               children: [
                 if (easyMissions.isNotEmpty)
                   MissionSection(
-                    title: '🎯 まずはここから！',
+                    title: '✨ はじめの一歩！',
                     missions: easyMissions,
                   ),
                 if (normalMissions.isNotEmpty)
                   MissionSection(
-                    title: '🎯ポスティング系ミッション',
+                    title: '✨ 情報デザインミッション',
                     missions: normalMissions,
                   ),
                 if (hardMissions.isNotEmpty)
                   MissionSection(
-                    title: '🎯高ポイントが獲得できる',
+                    title: '✨ 高ポイントをゲット！',
                     missions: hardMissions,
                   ),
               ],
